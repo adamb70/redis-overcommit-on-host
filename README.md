@@ -19,7 +19,7 @@ version: '3'
 services:
   # redis-overcommit-on-host
   redis-overcommit:
-    build: https://github.com/bkuhl/redis-overcommit-on-host.git
+    build: https://github.com/adamb70/redis-overcommit-thp-on-host.git
     restart: 'no'
     privileged: true
     volumes:
