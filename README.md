@@ -4,6 +4,8 @@ Enable overcommitting to memory on a host running a redis container.  See the [R
 
 Additionally, disable transparent huge pages and thp defrag mode.
 
+View details on [Docker Hub](https://hub.docker.com/r/adamb70/redis-overcommit-thp-on-host).
+
 # How to use
 Schedule this container to run alongside any host with a running `redis` container.
 
@@ -19,7 +21,7 @@ version: '3'
 services:
   # redis-overcommit-on-host
   redis-overcommit:
-    build: https://github.com/adamb70/redis-overcommit-thp-on-host.git
+    image: adamb70/redis-overcommit-thp-on-host
     restart: 'no'
     privileged: true
     volumes:
